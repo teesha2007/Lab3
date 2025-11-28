@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tanishka | Web Developer</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+        }
+
+        /* HEADER */
+        header {
+            background: #0b5ed7;
+            padding: 18px 0;
+            color: white;
+        }
+        header .wrapper {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            opacity: 0.7;
+        }
+
+        /* HERO */
+        #hero {
+            width: 80%;
+            margin: 60px auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #hero img {
+            width: 260px;
+            border-radius: 50%;
+        }
+        #hero h1 {
+            font-size: 42px;
+            color: #0b5ed7;
+        }
+        #hero .title {
+            font-size: 22px;
+            margin: 8px 0;
+            color: #6397e6;
+            font-weight: 600;
+        }
+        #hero p {
+            width: 90%;
+            color: #444;
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+        .btn {
+            margin-top: 20px;
+            padding: 12px 22px;
+            background: #0b5ed7;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #073e96;
+        }
+
+        /* SECTIONS */
+        section {
+            width: 80%;
+            margin: 60px auto;
+        }
+        section h2 {
+            font-size: 28px;
+            color: #0b5ed7;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        /* GRID BLOCKS */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            border: 2px solid #0b5ed7;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            transition: 0.3s;
+            font-size: 18px;
+        }
+        .card:hover {
+            background: #0b5ed7;
+            color: white;
+        }
+
+        .project-card {
+            padding: 20px;
+            border: 1px solid #ccc;
+            background: #f6f6f6;
+            border-radius: 8px;
+        }
+
+        /* FORM */
+        form {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        input, textarea {
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid #aaa;
+            font-size: 16px;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 18px;
+            background: #0b5ed7;
+            color: white;
+            font-size: 16px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            #hero {
+                flex-direction: column;
+                text-align: center;
+            }
+            #hero p {
+                width: 100%;
+            }
+            form {
+                width: 100%;
+            }
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="wrapper">
+            <h2>Tanishka Port.</h2>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero">
+        <div>
+            <h1>Hi, I'm Tanishka </h1>
+            <p class="title"> Web Developer </p>
+            <p>I love creating neat, responsive and user-friendly digital experiences using modern web technologies.</p>
+            <button class="btn">Download Resume</button>
+        </div>
+        <img src="mine.jpg"
+        alt="profile picture"  />
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate learner exploring the world of web development. I enjoy building structured layouts and aesthetic designs.
+        </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="grid">
+            <div class="card">HTML</div>
+            <div class="card">Python</div>
+            <div class="card">Web Design</div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="grid">
+            <div class="project-card"> Project Placeholder 1</div>
+            <div class="project-card"> Project Placeholder 2</div>
+            <div class="project-card"> Project Placeholder 3</div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <input type="text" placeholder="Your Name" />
+            <input type="email" placeholder="Email" />
+            <textarea placeholder="Message" rows="5"></textarea>
+            <button class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 | Designed by Tanishka
+    </footer>
+
+</body>
+</html>`}]}
